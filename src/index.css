@@ -1,4 +1,5 @@
 body {
+  color: white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -6,8 +7,107 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+html{
+  background: #22274e;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.header {
+  height:5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0px 15px 0px;
+}
+.search{
+  height: 20px;
+  border: none; 
+  outline: none; 
+  -webkit-appearance: none; 
+  width: 274px; 
+  vertical-align: middle;
+  outline:none;
+  background: none;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid #3d6c89;
+}
+input::-webkit-input-placeholder { 
+  color: white;
+}
+.button{
+    width: 20px;
+    height: 20px; 
+    border: none; 
+    background-size: cover;
+    outline:none;
+    border:none;
+}
+.displayNone{
+  display: none;
+}
+.movieSearch{
+  text-align: center;
+  margin: 5px 0px;
+}
+.containerMovies{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  flex-wrap: wrap;
+}
+.poster{
+  width: 100%;
+  height: 260px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  opacity: 0.95;
+}
+.movieInfo{
+  display: flex;
+  justify-content:space-around;
+  font-size: 20px;
+}
+.green{
+  color: green;
+}
+.red{
+  color: red;
+}
+.orange{
+  color: orange;
+}
+.containerFilm{    
+  margin: 10px;
+  display: block;
+  width: 237px;
+  height: 305px;
+  background: #373d6c;
+  border-radius: 5px;
+}
+.rating{
+  font-weight: bold;
+  background: #22254b;
+  border-radius: 5px;
+  margin: 2px 0px 0px 0px;
+  padding: 2px 4px 6px 4px;
+  height: 27px;
+}
+.result{
+  margin-top: 10px;
+  font-size: 12px;
+}
+.titleMovie{    
+  font-size: 15px;
+  text-align: center;
+  width: 172px;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+  color: white;
 }
